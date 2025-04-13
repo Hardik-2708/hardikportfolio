@@ -74,7 +74,7 @@ const Featured = () => {
             <Grid container spacing={4} justifyContent="center">
               {FeatureData.map((project, index) => (
                 <Grid item xs={12} sm={6} md={4} key={index}>
-                  <Card sx={{borderRadius:'20px 20px 20px 20px', cursor: 'pointer',backgroundColor: 'transparent',maxHeight:'440px' }}>
+                  <Card sx={{borderRadius:'24px 24px 24px 24px', cursor: 'pointer',backgroundColor: 'transparent' }}>
                     <CardMedia
                       component="img"
                       height="140"

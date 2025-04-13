@@ -94,7 +94,7 @@ const AboutComponent = () => {
           </Grid>
           <Grid container spacing={2} justifyContent="center" alignItems="center" className="cm-skills-wrapper">
             {skills.map((skill, index) => (
-              <Grid item xs={6} sm={4} md={1.5} lg={1.5} key={index} textAlign="center" sx={{ textAlign: '-webkit-center' }}>
+              <Grid item xs={2} sm={4} md={1.5} lg={1.5} key={index} textAlign="center" sx={{ textAlign: '-webkit-center' }}>
                 <Tooltip title={skill.name}>
                   <Card className="shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl flex flex-col items-center">
                     {skill.icon}

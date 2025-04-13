@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom"; // Import NavLink
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from "react-router-dom"; // Import NavLink
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -197,6 +197,7 @@ const App = () => (
     <Navigation />
     <ScrollToTop />
     <Routes>
+    <Route path="/" element={<Navigate to="/home" replace />} />
       {pages.map(({ path, title }) => (
         <Route
           key={path}

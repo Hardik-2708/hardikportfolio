@@ -309,7 +309,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     width: 38px;
-    height: 30px;
+    height: 38px;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
@@ -370,6 +370,7 @@ body {
 .cm-right-side-drawer {
   .MuiPaper-root {
     background-color: var(--purple-100);
+    width: 60%;
     .MuiListItem-root {
       .MuiTypography-root {
         font-size: 1.2rem;
@@ -980,7 +981,7 @@ body {
   }
   .MuiPaper-root{
     height: 100%;
-    max-height: 440px;
+    min-height: 440px;
   }
 }
 /* Feature section end */
@@ -990,9 +991,7 @@ body {
 
 /* Contact section start */
 .cm-contect-section-wrapper{
-.cm-contact-section{  
-  background-color: var(--purple-900);
-  border-radius: 50px;
+.cm-contact-section{   
   margin-top: 4rem;
   margin-bottom: 4rem;
   .cm-contact-role{
@@ -1002,10 +1001,14 @@ body {
     font-weight: 600;
     font-size: 1.2rem;
   }
-.MuiBox-root{
-  padding: 2rem;
-}
- 
+  .MuiBox-root{
+    padding: 2rem;    
+  }
+  .MuiGrid-root{
+    &:last-child{
+      border-radius: 0 50px 50px 0;
+    }
+  }
   .cm-contact-logo {
     position: relative;
     &::before {
@@ -1480,16 +1483,124 @@ div {
     margin: 0rem auto 0rem auto;
    }
   }
-}
-
-/* Extra Small Devices (Phones, 480px - 600px) */
-@media (max-width: 600px) {
   
+/* Contact section start */
+.cm-contect-section-wrapper{
+  .cm-contact-section{      
+    justify-content: center;
+    .cm-contact-logo {
+       &::before {
+         border-radius: 24px 24px 0px 0px;      
+      }
+      img{         
+        width: 50%;         
+      }
+    }
+    .MuiGrid-root{
+      &:last-child{
+        border-radius: 0 0px 24px 24px;
+      }
+    }
+  }
+  }
+  /* Contact section end  */
+}
+.cm-right-side-drawer {
+  .MuiPaper-root {    
+    width: 80%;     
+  }
+}
+@media(min-width: 600px) and (max-width: 690px) {
+  .cm-awsome-section {
+    .MuiPaper-root {
+      height: 360px;
+    }
+  }
+}
+/* Extra Small Devices (Phones, 480px - 600px) */
+@media (max-width: 660px) {
+  .cm-main-header{
+    .MuiContainer-root{
+      .cm-header-logo{
+        max-width: 128px;
+      }
+      .MuiIconButton-root{
+        padding: 0px;
+        display: flex;
+        align-items: center;
+      }
+    } 
+    
+  }
+  .cm-awsome-section {
+    .serviceGrid {
+      >.MuiGrid-item  {
+        .serviceCard {
+          border-radius: 24px !important;
+          .MuiCardContent-root {
+            border-radius: 24px !important;
+          }
+        }
+      }      
+    }
+  }
+  .cm-skills-section{
+    padding: 1rem 0px;
+    .cm-skills-universe-main{   
+      width: auto;
+      background: radial-gradient(20% 45% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+      margin-top: -0.6rem;
+      height: 220px;
+      .cm-universe-vertical-line{
+        display: none !important;
+      }      
+      .cm-skkills-universe-inner{
+        width: 94px;
+        &::before{
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    .cm-skills-wrapper {
+      .MuiCard-root{
+        width: 54px;
+        height: 54px;
+        .text-5xl{
+          font-size: 2.4rem !important;
+        }
+      }
+    }
+  }   
+  .cm-universe-line{
+    display: none;
+  }
+  .cm-home-shadow {
+    &.cm-home-shadow {      
+      height: 260px;
+      width: 260px;
+      margin: auto;
+      img{
+        width: 40%;
+      }
+      &::before{
+        width: 180px;
+        height: 180px;        
+      }
+    }
+  }
+  .cm-experience-section {
+    padding: 0rem 0px 2rem 0;     
+  }
 }
 
 /* Very Small Devices (Phones, 320px - 480px) */
 @media (max-width: 480px) {
-   
+  .cm-right-side-drawer {
+    .MuiPaper-root {    
+      width: 100%;     
+    }
+  }
 }
 
 

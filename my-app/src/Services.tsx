@@ -36,11 +36,11 @@ const Services = () => {
       <Container>
         <Grid container spacing={14} justifyContent="center" alignItems="center">
           <Grid item xs={12} md={12}>
-            <Typography component="h4" variant='body1' className='cm-section-title'>  </Typography>
+            <Typography component="h4" variant='body1' className='cm-section-title'>Awesome Services </Typography>
 
             <Grid container spacing={{ xs: 2, sm: 2, md: 4, lg: 4 }} rowSpacing={{ xs: 2, sm: 2, md: 0, lg: 4 }} justifyContent="center"  className="serviceGrid">
               {servicesData.map((service, index) => (
-                <Grid item xs={12} sm={12} md={6} lg={4} xl={4} key={index}>
+                <Grid item xs={12} sm={6} md={6} lg={4} xl={4} key={index}>
                   <Card sx={{ p: 3, textAlign: "center", boxShadow: 3, borderRadius: "12px" }} className="serviceCard">
                   <Typography component="div" className="cm-service-image">{service.icon}</Typography>   
                     <CardContent>

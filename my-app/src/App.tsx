@@ -149,9 +149,9 @@ const Navigation = () => {
       </AppBar>
 
       {/* Drawer for Mobile View */}
-      <Drawer anchor="right" className="cm-right-side-drawer" open={drawerOpen} onClose={toggleDrawer(false)}>
+      <Drawer anchor="right" sx={{width: '100%'}} className="cm-right-side-drawer" open={drawerOpen} onClose={toggleDrawer(false)}>
         <Box
-          sx={{ width: 250 }}
+          sx={{ width: "100%" }}
           role="presentation"
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
@@ -176,8 +176,8 @@ const Navigation = () => {
                 xs: "block",
                 md: "none",
                 position:"absolute",
-                right: 5,
-                top: 0,
+                right: 16,
+                top: 4,
                 zIndex: 1 } }}
               onClick={toggleDrawer(true)} // Fixed event handling
             >

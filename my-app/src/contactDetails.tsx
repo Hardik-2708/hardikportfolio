@@ -9,11 +9,11 @@ const ContactSection: React.FC = () => {
         <Box className="cm-contect-section-wrapper">
         <Container>
             <Typography component="h4" variant='body1' className='cm-section-title'>Get in touch</Typography>
-            <Grid container spacing={0} className="cm-contact-section">
-                <Grid item xs={12} md={6} className="cm-contact-logo">
+            <Grid container spacing={0} className="cm-contact-section" sx={{ justifyContent: { lg: 'center' } }}>
+                <Grid xs={12} sm={8} md={6} lg={6} xl={6}className="cm-contact-logo">
                     <img src={ContectImg} alt="contact Logo" />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid xs={12} sm={8} md={6} lg={6} xl={6} sx={{backgroundColor:'var(--purple-900)' }}>
                     <Box className="" textAlign="center">
                         <Typography variant="h4" mb={4} fontWeight={500}>
                             What’s Next?

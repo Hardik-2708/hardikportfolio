@@ -540,6 +540,12 @@
     .cm-experience-section {
         padding: 0rem 0px 2rem 0;
     }
+    .cm-skills-section{
+        .cm-experiance-title{
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
 }
  
 @media (max-width: 480px) {
@@ -612,6 +618,7 @@
             display: none;
         }
     }
+   
 }
 @media (max-width: 375px) {
     .cm-home-shadow{
@@ -622,15 +629,47 @@
         }
     }   
     .cm-home-section {
-        
+
         .MuiTypography-root {
             &.cm-user-name-wrapper {
-                font-size: 1.4rem;
-                &.cm-user-name{
-                    font-size: 1.4rem;
+                font-size: 1.2rem;
+                &.cm-user-name {
+                    font-size: 1.2rem;
+                }
+            }
+            &.cm-user-role-wrapper {
+                font-size: 1.6rem;
+                gap: 6px;
+                .cm-user-role {
+                    font-size: 1.6rem;
                 }
             }
         }
-}
+    }
+    .cm-skills-section{
+        .cm-skills-wrapper{
+            .MuiCard-root {
+                width: 40px;
+                height: 40px;
+                .text-5xl {
+                    font-size: 1.8rem !important;
+                }            
+            }
+        } 
+        .cm-skills-universe-main {
+            background: radial-gradient(29% 45% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+         }
+    }
+    .cm-experience-section{
+        .cm-experirece-box{
+            padding: 36px 12px 12px 12px;
+            .MuiChip-root{
+                position: absolute;
+                top: 0;
+                bottom: unset;
+                border-radius: 20px 20px 0px 20px;
+            }
+        }
+    }  
 }
 /* Reshponshiv css end */

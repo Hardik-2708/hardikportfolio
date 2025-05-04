@@ -20,7 +20,7 @@ function ExperienceDetails() {
     return (
         <Container maxWidth="md"  sx={{ mt: 4 }}  className="cm-skills-section">
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between cm-experiance-title">
                 <Button variant="contained" className="custom-btn  btn-1" sx={{
                     backgroundColor: 'var(--purple-900) !important',
                 }} onClick={() => navigate("/home")} startIcon={<ArrowBackIcon />}>

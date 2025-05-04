@@ -145,6 +145,7 @@ body {
   letter-spacing: 1px;
   background-color: var(--bg-color);
   color: var(--blue-50);
+  font-size: 18px;
 }
 
 .App {
@@ -193,6 +194,7 @@ body {
   margin-bottom: 24px !important;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -231,7 +233,7 @@ body {
       &:nth-child(6) {
         position: relative;
         font-size: clamp(1rem, 2.5vw, 1.125rem);
-        text-transform: capitalize;  
+        text-transform: capitalize;
         color: var(--bg-black);
         font-family: 'Plus Jakarta Sans';
 
@@ -267,7 +269,8 @@ body {
       transition: 1.5s ease;
     }
   }
-  &.custom-btn { 
+
+  &.custom-btn {
     color: var(--bg-white);
     border-radius: 5px;
     padding: 4px 8px;
@@ -278,33 +281,34 @@ body {
     position: relative;
     display: inline-flex;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-                7px 7px 20px 0px rgba(0, 0, 0, 0.1),
-                4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+      4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     outline: none;
     font-size: 1.0rem !important;
     text-transform: none;
     border: none;
     outline: none;
-   }
-   
-   .btn-1 {
-    background: rgb(96,9,240);
-    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  }
+
+  .btn-1 {
+    background: rgb(96, 9, 240);
+    background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
     border: none;
-   }
-   
-   .btn-1:before {
+  }
+
+  .btn-1:before {
     height: 0%;
     width: 2px;
-   }
-   
-   .btn-1:hover {
-    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-       inset -4px -4px 6px 0 rgba(255,255,255,.2),
-       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-   }
-   &.cm-social-btn{
+  }
+
+  .btn-1:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+      -4px -4px 6px 0 rgba(116, 125, 136, .5),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+
+  &.cm-social-btn {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -318,38 +322,43 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
     background-color: #00d757;
     color: var(--bg-white);
-    padding: 18px 12px;
+    padding: 18px 11px;
     min-width: unset;
     text-transform: none;
-    .sing{
+
+    .sing {
       width: 100%;
       transition: width ease-in-out 1s;
       display: flex;
       align-items: center;
       justify-content: center;
-      .MuiButton-text{
-        
-          position: absolute;
-          right: 0%;
-          width: 0%;
-          opacity: 0;
-          color: white;
-          font-size: 1.2em;
-          font-weight: 600;
-          transition-duration: 0.3s;
-      
+
+      .MuiButton-text {
+
+        position: absolute;
+        right: 0%;
+        width: 0%;
+        opacity: 0;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 600;
+        transition-duration: 0.3s;
+
       }
     }
-    &:hover{
+
+    &:hover {
       width: 260px;
       border-radius: 40px;
       transition: width ease-in-out 1s;
       white-space: nowrap;
+
       .sign {
         width: 30%;
         transition-duration: 0.3s;
         padding-left: 10px;
       }
+
       .text {
         opacity: 1;
         width: 70%;
@@ -357,8 +366,8 @@ body {
         padding-right: 10px;
       }
     }
-     
-   }
+
+  }
 }
 
 
@@ -371,6 +380,7 @@ body {
   .MuiPaper-root {
     background-color: var(--purple-100);
     width: 60%;
+
     .MuiListItem-root {
       .MuiTypography-root {
         font-size: 1.2rem;
@@ -379,6 +389,7 @@ body {
     }
   }
 }
+
 /* Right side drawer css end */
 
 /* Application Header css start */
@@ -586,7 +597,8 @@ body {
   }
 
   .MuiTypography-root {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    font-family: "Plus Jakarta Sans", serif;
   }
 
   h6 {
@@ -610,6 +622,7 @@ body {
   h6 {
     &.MuiTypography-root {
       font-size: 20px;
+      font-family: "Plus Jakarta Sans", serif;
     }
   }
 
@@ -848,12 +861,12 @@ body {
     border-top: 2px solid var(--purple-200);
     border-radius: 22px;
 
-      // .MuiTypography-root {
-      //   color: var(--bg-white);
-      // }
+    // .MuiTypography-root {
+    //   color: var(--bg-white);
+    // }
 
     .cm-experirece-content {
-      display: block;     
+      display: block;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -863,14 +876,17 @@ body {
       margin: 8px 0px 8px 0;
       color: var(--indigo-100);
       font-size: clamp(1rem, 2.5vw, 0.8rem);
+
       &::after {
         content: "...";
         display: block;
         text-align: left;
         margin-top: 8px;
       }
+
     }
-    .MuiChip-root{
+
+    .MuiChip-root {
       position: absolute;
       right: 0;
       z-index: 1;
@@ -884,37 +900,42 @@ body {
   }
 }
 
-.cm-experiance-details{
-  .MuiContainer-root{
-    .MuiTypography-h4{
-    //  font-family: "Preahvihear", serif !important;
+.cm-experiance-details {
+  .MuiContainer-root {
+    .MuiTypography-h4 {
+      //  font-family: "Preahvihear", serif !important;
       padding-top: 2rem;
     }
+
     .MuiPaper-root {
       background: linear-gradient(95.56deg, #3b0687 0.58%, rgba(114, 34, 226, 0.368627451) 16.32%,
-                   rgba(130, 74, 209, 0.5098039216) 29.33%, rgba(166, 102, 255, 0.4235294118) 45.66%,
-                  rgba(163, 100, 252, 0.3843137255) 54.44%);
+          rgba(130, 74, 209, 0.5098039216) 29.33%, rgba(166, 102, 255, 0.4235294118) 45.66%,
+          rgba(163, 100, 252, 0.3843137255) 54.44%);
       padding: 0px;
       color: var(--bg-white);
-      .MuiCardContent-root{
+
+      .MuiCardContent-root {
         padding: 16px;
       }
     }
   }
 }
+
 /* Experience section End */
 
 /* Services section start */
 .card-hover-effect {
   transition: transform 0.3s ease-in-out;
 }
+
 .card-hover-effect:hover {
   transform: translateY(-5px);
 }
+
 /* Services section end */
 
 /* Awsome sectiion start */
-.cm-awsome-section{ 
+.cm-awsome-section {
   .MuiPaper-root {
     background-color: var(--purple-900);
     border-radius: 24px;
@@ -925,117 +946,139 @@ body {
     height: 380px;
     margin-top: 4rem;
     transition: 0.5s;
-    .cm-service-image{
+
+    .cm-service-image {
       width: 110px;
       height: 110px;
       position: absolute;
       top: 0px;
       left: 50%;
       transform: translateY(-50%) translateX(-50%);
-      background: linear-gradient(0deg, rgb(17 7 31) 0%, rgb(154 106 198) 100%);;
+      background: linear-gradient(0deg, rgb(17 7 31) 0%, rgb(154 106 198) 100%);
+      ;
       border-radius: 50%;
-      img{
+
+      img {
         width: 80%;
         margin: 10px auto;
       }
     }
+
     .MuiCardContent-root {
       background-color: #8450b4;
       border-radius: 24px;
-      box-shadow: inset 0 0 100px 2px var(--purple-200);     
+      box-shadow: inset 0 0 100px 2px var(--purple-200);
       height: 100%;
-        .MuiTypography-root {
-          color: var(--main-header);
-          margin-bottom: 8px;
-          font-size: 20px;
-          &.MuiTypography-h6{
-            font-size: 24px;
-            margin-top: 3rem;
-            
-          }
-        }
-      p {
-        &.MuiTypography-root {
-          color: var(--bg-black);      
+
+      .MuiTypography-root {
+        color: var(--main-header);
+        margin-bottom: 8px;
+        font-size: 20px;
+
+        &.MuiTypography-h6 {
+          font-size: 24px;
+          margin-top: 3rem;
+
         }
       }
-      
+
+      p {
+        &.MuiTypography-root {
+          color: var(--bg-black);        
+          font-family: "Plus Jakarta Sans", serif;
+        }
+      }
+
     }
-   
-    &:hover{
+
+    &:hover {
       transform: translateY(-16px);
     }
   }
 
 }
+
 /* Awsome section End */
 /* Feature section start */
-.cm-featured-section{
+.cm-featured-section {
   padding: 8rem 0px;
-  .MuiCardContent-root{
+
+  .MuiCardContent-root {
     background: var(--purple-900);
     height: 100%;
   }
-  .MuiCardMedia-root{
+
+  .MuiCardMedia-root {
     max-height: 200px;
+    p{
+      &.MuiTypography-root{
+        font-family: "Plus Jakarta Sans", serif;
+      }
+    }
   }
-  .MuiPaper-root{
+
+  .MuiPaper-root {
     height: 100%;
     min-height: 440px;
   }
 }
+
 /* Feature section end */
- 
-
-
 
 /* Contact section start */
-.cm-contect-section-wrapper{
-.cm-contact-section{   
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  .cm-contact-role{
-    font-family: "Plus Jakarta Sans", serif;
-    text-transform: capitalize;
-    color: var(--purple-500);
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
-  .MuiBox-root{
-    padding: 2rem;    
-  }
-  .MuiGrid-root{
-    &:last-child{
-      border-radius: 0 50px 50px 0;
+.cm-contect-section-wrapper {
+  .cm-contact-section {
+ 
+    margin-bottom: 4rem;
+
+    .cm-contact-role {
+      font-family: "Plus Jakarta Sans", serif;
+      text-transform: capitalize;
+      color: var(--purple-500);
+      font-weight: 600;
+      font-size: 1.2rem;
     }
-  }
-  .cm-contact-logo {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background: var(--purple-800);
-      border-radius: 50px 0 0px 50px;      
+
+    .MuiBox-root {
+      padding: 2rem;
     }
-    img{
-      z-index: 1;
+
+    .MuiGrid-root {
+      &:last-child {
+        border-radius: 0 50px 50px 0;
+      }
+    }
+
+    .cm-contact-logo {
       position: relative;
-      width: 80%;
-      margin: auto;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: var(--purple-800);
+        border-radius: 50px 0 0px 50px;
+      }
+
+      img {
+        z-index: 1;
+        position: relative;
+        width: 80%;
+        margin: auto;
+      }
     }
   }
 }
-}
+
 /* Contact section end  */
 
 /* Footer section css start */
-footer{
+footer {
   .MuiTypography-root {
-    strong{
+    strong {
       font-family: "Preahvihear", serif !important;
       color: var(--purple-300);
     }
@@ -1067,12 +1110,6 @@ footer{
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 
 
 
@@ -1083,7 +1120,7 @@ footer{
 p,
 div {
   &.MuiTypography-root {
-    
+
     margin: 0;
     @include responsive-font(1, 1.125);
     line-height: 1.6;
@@ -1110,498 +1147,22 @@ div {
 
     // Adjust padding and font size for different screen sizes
     @media (max-width: map-get($breakpoints, small)) {
-      padding: 8px 12px;
-      font-size: 1rem; // Smaller font size on mobile
+      padding: 4px 11px;
+      font-size: 1em !important;
     }
 
     @media (min-width: map-get($breakpoints, small)) and (max-width: map-get($breakpoints, medium)) {
-      padding: 10px 14px;
+      padding: 10px 12px;
       font-size: 1.125rem;
     }
   }
 }
 
-
-
-
-/* Reshponshive css start */
-
-/* Large Devices (Desktops, above 1200px) */
-@media (max-width: 1200px) {
-  /* home section css start*/
-
-  .cm-home-section {
-    padding: 2.5rem 0px;
-
-    .MuiTypography-root {
-      &.cm-user-name-wrapper {
-        font-size: 1.4rem;
-
-        .cm-user-name {
-          font-size: 1.4rem;
-        }
-      }
-
-      &.cm-user-role-wrapper {
-        font-size: 4rem;
-
-        .cm-user-role {
-          font-size: 4rem;
-        }
-      }
-      &.cm-user-text{
-        margin-top: 0.8rem !important;
-        margin-left: 0.5rem;
-      }
-    }
-    .cm-header-arrow{
-      top: -4%;
-      right: -8%;
-  
-    }
-  }
- 
-  /* home section css end*/
-  /* Awsome section css start */
-  
-  .cm-awsome-section{
-    .MuiPaper-root{
-      height: 240px;
-    }
-  } 
-  /* Awsome section css start */
-
-  /* awsome section css start  */
-  .cm-awsome-section {
-    .serviceGrid {
-      >.MuiGrid-item:nth-child(1) {
-        .serviceCard {
-          border-radius: 24px 24px 100px 24px;
-          .MuiCardContent-root {
-            border-radius: 24px 24px 100px 24px;
-          }
-        }
-      }
-      >.MuiGrid-item:nth-child(2) {
-        .serviceCard {
-          border-radius: 24px 24px 24px 100px ;
-          .MuiCardContent-root {
-            border-radius: 24px 24px  24px 100px;
-          }
-        }
-      }
-      >.MuiGrid-item:nth-child(3) {
-        .serviceCard {
-          border-radius: 100px 100px 24px 24px ;
-          .MuiCardContent-root {
-            border-radius: 100px 100px 24px 24px;
-          }
-        }
-      }
-    }
-  }
-  /* awsome section css end  */
-  /* expirence section css start  */
-  .cm-experience-section{
-    &::before{
-      width: 33%;
-      height: 70%;
-    }
-  }
-
-  /* expirence section css end  */
-
-}
-@media(min-width: 1024px) and (max-width: 1200px) {
-  /* home section css start*/
-  .cm-home-shadow {
-    &.cm-home-shadow {      
-      height: 400px;
-    }
-  }
-  .cm-header-arrow {
-    top: -140px;
-    right: -8%; 
-}
-  /* Awsome section css start */
-  .cm-awsome-section{
-    .MuiPaper-root{
-      height: 280px;
-    }
-  } 
-  /* Awsome section css start */
-  /* home section css end*/
-  /* awsome section css start  */
-  .cm-awsome-section {
-    .serviceGrid {
-      >.MuiGrid-item:nth-child(1) {
-        .serviceCard {
-          border-radius: 24px 24px 100px 24px;
-          .MuiCardContent-root {
-            border-radius: 24px 24px 100px 24px;
-          }
-        }
-      }
-      >.MuiGrid-item:nth-child(2) {
-        .serviceCard {
-          border-radius: 24px 24px 24px 100px ;
-          .MuiCardContent-root {
-            border-radius: 24px 24px  24px 100px;
-          }
-        }
-      }
-      >.MuiGrid-item:nth-child(3) {
-        .serviceCard {
-          border-radius: 100px 100px 24px 24px ;
-          .MuiCardContent-root {
-            border-radius: 100px 100px 24px 24px;
-          }
-        }
-      }
-    }
-  }
-  /* awsome section css end  */
-  /* expirence section css start  */
-  .cm-experience-section{
-    &::before{
-      width: 33%;
-      height: 60%;
-    }
-  }
-
-  /* expirence section css end  */
-
-}
-@media (max-width: 1120px) {
-  .cm-skills-section {
-    .cm-skills-universe-main {
-      .cm-universe-vertical-line-main {
-        .cm-universe-vertical-line {
-          &.cm-first-vertical-line {
-            display: none;
-          }
-          &.cm-five-vertical-line {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-}
-/* Medium Devices (Tablets, 768px - 1024px) */
-@media (max-width: 1024px) {
-  .cm-home-shadow {
-    &.cm-home-shadow {
-      height: 380px;
-    }
-  }
-
-  .cm-awsome-section {
-    .MuiPaper-root {
-      height: 280px;
-    }
-  }
-
-}
-@media (max-width: 1010px) {
-  .cm-home-section{
-    .cm-header-arrow {
-      display: none;
-     }
-  }
-  .cm-skills-section {
-    .cm-skills-universe-main {
-      background: radial-gradient(25% 40% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
-    }
-  }
-  .cm-skills-section{
-    .cm-skills-universe-main{
-      .cm-universe-line{
-        width: 20%;
-        height: 170%;
-        top: 0px;
-         
-        &:nth-child(2) {
-          top: 0px;
-          rotate: 94deg;        
-        }
-  
-        &:nth-child(3) {
-          top: 0px;
-          rotate: 86deg;          
-        }
-  
-        &:nth-child(4) {
-          top: -2px;
-          rotate: 82deg;         
-        }
-  
-        &:nth-child(5) {
-          top: -4px;
-          rotate: 96deg;   
-        }
-        svg{
-          &.Html5 {           
-            transform: translate(22%, 250%);
-          }
-  
-          &.Javascript1 {
-            transform: translate(-210%, 288%);
-          }
-  
-          &.Css3 {
-            transform: translate(-32px, 121px) rotate(379deg);
-          }
-  
-          &.Typescript {
-            transform: translate(66px, 332px) rotate(-60deg);
-          }
-  
-          &.Sass {
-            transform: translate(31px, 446px) rotate(-42deg);
-          }
-  
-          &.Mui {
-            transform:translate(100px, 220px) rotate(-96deg);
-          }
-  
-          &.Tailwindcss {
-            transform: translate(103px, 104px) rotate(-103deg);
-          }
-  
-          &.Angular {
-            transform: translate(64px, 414px) rotate(-53deg);
-          }
-  
-          &.Adobexd {
-            transform: translate(214px, 844px) rotate(297deg);
-          }
-  
-          &.bootstrap {
-            transform: translate(100px, 472px) rotate(297deg);
-          }  
-          &.Ai {
-            transform: translate(61px, 474px) rotate(276deg);
-          }  
-        }
-      }
-      .cm-skkills-universe-inner{
-        width: 140px;
-        &::before{
-          width: 160px;
-          height: 160px;
-        }
-      }
-    }
-     
-  } 
-
-  /* expirence section css start  */
-  .cm-experience-section{
-    &::before{
-        background: radial-gradient(45% 35% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
-    }
-  }
-  /* expirence section css end  */
-   
-}
-/* Small Devices (Tablets in portrait mode, 600px - 768px) */
-@media (max-width: 900px) {
-   .cm-main-header{
-    .MuiContainer-root{
-      padding: 0px;
-      .cm-header-logo {     
-        max-width: 140px;   
-      }
-    }
-    .MuiToolbar-root {
-      padding: 0.5rem 1rem;      
-    }
-   }
-   .cm-home-shadow {
-    &.cm-home-shadow {      
-      height: 356px;
-      width: 356px;
-      margin: auto;
-    }
-  }
-  .cm-home-section {
-    padding: 0.5rem 0px;
-    .MuiTypography-root {
-      &.cm-user-name-wrapper {
-        font-size: 1.5rem;      
-      }
-      &.cm-user-role-wrapper {
-        font-size: 3rem;
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        .cm-user-role{
-          font-size: 3rem;
-        }     
-      }  
-    }        
-  }
-  .cm-section-title {
-    font-size: 2rem !important;
-  }
-  .cm-awsome-section {
-    .serviceGrid {
-      >.MuiGrid-item  {
-        .serviceCard {
-          border-radius: 100px 100px 24px 24px !important;
-          .MuiCardContent-root {
-            border-radius: 100px 100px 24px 24px !important;
-          }
-        }
-      }
-      
-    }
-  }
-  .cm-skills-section {
-    .cm-skills-universe-main {
-      .cm-universe-vertical-line-main {
-        .cm-universe-vertical-line {
-          &.cm-secound-vertical-line {
-            top: -138%;
-            left: 66px;
-            rotate: -11deg;
-          }
-          &.cm-third-vertical-line {
-            top: -118%;
-            left: 269px;
-          }
-          &.cm-four-vertical-line {
-            top: -139%;
-            right: 82px;
-            rotate: 14deg;
-          }
-        }
-      }
-    }
-   .cm-skills-universe-main{
-    margin: 0rem auto 0rem auto;
-   }
-  }
-  
-/* Contact section start */
-.cm-contect-section-wrapper{
-  .cm-contact-section{      
-    justify-content: center;
-    .cm-contact-logo {
-       &::before {
-         border-radius: 24px 24px 0px 0px;      
-      }
-      img{         
-        width: 50%;         
-      }
-    }
-    .MuiGrid-root{
-      &:last-child{
-        border-radius: 0 0px 24px 24px;
-      }
-    }
-  }
-  }
-  /* Contact section end  */
-}
 .cm-right-side-drawer {
-  .MuiPaper-root {    
-    width: 80%;     
-  }
-}
-@media(min-width: 600px) and (max-width: 690px) {
-  .cm-awsome-section {
-    .MuiPaper-root {
-      height: 360px;
-    }
-  }
-}
-/* Extra Small Devices (Phones, 480px - 600px) */
-@media (max-width: 660px) {
-  .cm-main-header{
-    .MuiContainer-root{
-      .cm-header-logo{
-        max-width: 128px;
-      }
-      .MuiIconButton-root{
-        padding: 0px;
-        display: flex;
-        align-items: center;
-      }
-    } 
-    
-  }
-  .cm-awsome-section {
-    .serviceGrid {
-      >.MuiGrid-item  {
-        .serviceCard {
-          border-radius: 24px !important;
-          .MuiCardContent-root {
-            border-radius: 24px !important;
-          }
-        }
-      }      
-    }
-  }
-  .cm-skills-section{
-    padding: 1rem 0px;
-    .cm-skills-universe-main{   
-      width: auto;
-      background: radial-gradient(20% 45% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
-      margin-top: -0.6rem;
-      height: 220px;
-      .cm-universe-vertical-line{
-        display: none !important;
-      }      
-      .cm-skkills-universe-inner{
-        width: 94px;
-        &::before{
-          width: 100px;
-          height: 100px;
-        }
-      }
-    }
-    .cm-skills-wrapper {
-      .MuiCard-root{
-        width: 54px;
-        height: 54px;
-        .text-5xl{
-          font-size: 2.4rem !important;
-        }
-      }
-    }
-  }   
-  .cm-universe-line{
-    display: none;
-  }
-  .cm-home-shadow {
-    &.cm-home-shadow {      
-      height: 260px;
-      width: 260px;
-      margin: auto;
-      img{
-        width: 40%;
-      }
-      &::before{
-        width: 180px;
-        height: 180px;        
-      }
-    }
-  }
-  .cm-experience-section {
-    padding: 0rem 0px 2rem 0;     
-  }
-}
-
-/* Very Small Devices (Phones, 320px - 480px) */
-@media (max-width: 480px) {
-  .cm-right-side-drawer {
-    .MuiPaper-root {    
-      width: 100%;     
-    }
+  .MuiPaper-root {
+    width: 80%;
   }
 }
 
 
-/* Reshponshiv css end */
+

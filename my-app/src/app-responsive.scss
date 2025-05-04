@@ -1,0 +1,636 @@
+/* Reshponshive css start */
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+/* Large Devices (Desktops, above 1200px) */
+@media (max-width: 1200px) {
+    /* home section css start*/
+
+    .cm-home-section {
+        padding: 2.5rem 0px;
+
+        .MuiTypography-root {
+            &.cm-user-name-wrapper {
+                font-size: 1.4rem;
+
+                .cm-user-name {
+                    font-size: 1.4rem;
+                }
+            }
+
+            &.cm-user-role-wrapper {
+                font-size: 4rem;
+
+                .cm-user-role {
+                    font-size: 4rem;
+                }
+            }
+
+            &.cm-user-text {
+                margin-top: 0.8rem !important;
+                margin-left: 0.5rem;
+            }
+        }
+
+        .cm-header-arrow {
+            top: -4%;
+            right: -8%;
+
+        }
+    }
+
+    /* home section css end*/
+    /* Awsome section css start */
+
+    .cm-awsome-section {
+        .MuiPaper-root {
+            height: 240px;
+        }
+    }
+
+    /* Awsome section css start */
+
+    /* awsome section css start  */
+    .cm-awsome-section {
+        .serviceGrid {
+            >.MuiGrid-item:nth-child(1) {
+                .serviceCard {
+                    border-radius: 24px 24px 100px 24px;
+
+                    .MuiCardContent-root {
+                        border-radius: 24px 24px 100px 24px;
+                    }
+                }
+            }
+
+            >.MuiGrid-item:nth-child(2) {
+                .serviceCard {
+                    border-radius: 24px 24px 24px 100px;
+
+                    .MuiCardContent-root {
+                        border-radius: 24px 24px 24px 100px;
+                    }
+                }
+            }
+
+            >.MuiGrid-item:nth-child(3) {
+                .serviceCard {
+                    border-radius: 100px 100px 24px 24px;
+
+                    .MuiCardContent-root {
+                        border-radius: 100px 100px 24px 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* awsome section css end  */
+    /* expirence section css start  */
+    .cm-experience-section {
+        &::before {
+            width: 33%;
+            height: 70%;
+        }
+    }
+
+    /* expirence section css end  */
+
+}
+
+@media(min-width: 1024px) and (max-width: 1200px) {
+
+    /* home section css start*/
+    .cm-home-shadow {
+        &.cm-home-shadow {
+            height: 400px;
+        }
+    }
+
+    .cm-header-arrow {
+        top: -140px;
+        right: -8%;
+    }
+
+    /* Awsome section css start */
+    .cm-awsome-section {
+        .MuiPaper-root {
+            height: 280px;
+        }
+    }
+
+    /* Awsome section css start */
+    /* home section css end*/
+    /* awsome section css start  */
+    .cm-awsome-section {
+        .serviceGrid {
+            >.MuiGrid-item:nth-child(1) {
+                .serviceCard {
+                    border-radius: 24px 24px 100px 24px;
+
+                    .MuiCardContent-root {
+                        border-radius: 24px 24px 100px 24px;
+                    }
+                }
+            }
+
+            >.MuiGrid-item:nth-child(2) {
+                .serviceCard {
+                    border-radius: 24px 24px 24px 100px;
+
+                    .MuiCardContent-root {
+                        border-radius: 24px 24px 24px 100px;
+                    }
+                }
+            }
+
+            >.MuiGrid-item:nth-child(3) {
+                .serviceCard {
+                    border-radius: 100px 100px 24px 24px;
+
+                    .MuiCardContent-root {
+                        border-radius: 100px 100px 24px 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* awsome section css end  */
+    /* expirence section css start  */
+    .cm-experience-section {
+        &::before {
+            width: 33%;
+            height: 60%;
+        }
+    }
+
+    /* expirence section css end  */
+
+}
+
+@media (max-width: 1120px) {
+    .cm-skills-section {
+        .cm-skills-universe-main {
+            .cm-universe-vertical-line-main {
+                .cm-universe-vertical-line {
+                    &.cm-first-vertical-line {
+                        display: none;
+                    }
+
+                    &.cm-five-vertical-line {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Medium Devices (Tablets, 768px - 1024px) */
+@media (max-width: 1024px) {
+    .cm-home-shadow {
+        &.cm-home-shadow {
+            height: 380px;
+        }
+    }
+
+    .cm-awsome-section {
+        .MuiPaper-root {
+            height: 280px;
+        }
+    }
+
+}
+
+@media (max-width: 1010px) {
+    .cm-home-section {
+        .cm-header-arrow {
+            display: none;
+        }
+    }
+
+    .cm-skills-section {
+        .cm-skills-universe-main {
+            background: radial-gradient(25% 40% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+        }
+    }
+
+    .cm-skills-section {
+        .cm-skills-universe-main {
+            .cm-universe-line {
+                width: 20%;
+                height: 170%;
+                top: 0px;
+
+                &:nth-child(2) {
+                    top: 0px;
+                    rotate: 94deg;
+                }
+
+                &:nth-child(3) {
+                    top: 0px;
+                    rotate: 86deg;
+                }
+
+                &:nth-child(4) {
+                    top: -2px;
+                    rotate: 82deg;
+                }
+
+                &:nth-child(5) {
+                    top: -4px;
+                    rotate: 96deg;
+                }
+
+                svg {
+                    &.Html5 {
+                        transform: translate(22%, 250%);
+                    }
+
+                    &.Javascript1 {
+                        transform: translate(-210%, 288%);
+                    }
+
+                    &.Css3 {
+                        transform: translate(-32px, 121px) rotate(379deg);
+                    }
+
+                    &.Typescript {
+                        transform: translate(66px, 332px) rotate(-60deg);
+                    }
+
+                    &.Sass {
+                        transform: translate(31px, 446px) rotate(-42deg);
+                    }
+
+                    &.Mui {
+                        transform: translate(100px, 220px) rotate(-96deg);
+                    }
+
+                    &.Tailwindcss {
+                        transform: translate(103px, 104px) rotate(-103deg);
+                    }
+
+                    &.Angular {
+                        transform: translate(64px, 414px) rotate(-53deg);
+                    }
+
+                    &.Adobexd {
+                        transform: translate(214px, 844px) rotate(297deg);
+                    }
+
+                    &.bootstrap {
+                        transform: translate(100px, 472px) rotate(297deg);
+                    }
+
+                    &.Ai {
+                        transform: translate(61px, 474px) rotate(276deg);
+                    }
+                }
+            }
+
+            .cm-skkills-universe-inner {
+                width: 140px;
+
+                &::before {
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+
+    }
+
+    /* expirence section css start  */
+    .cm-experience-section {
+        &::before {
+            background: radial-gradient(45% 35% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+        }
+    }
+
+    /* expirence section css end  */
+
+}
+
+/* Small Devices (Tablets in portrait mode, 600px - 768px) */
+@media (max-width: 900px) {
+    .cm-main-header {
+        .MuiContainer-root {
+            padding: 0px;
+
+            .cm-header-logo {
+                max-width: 140px;
+            }
+        }
+
+        .MuiToolbar-root {
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    .cm-home-shadow {
+        &.cm-home-shadow {
+            height: 356px;
+            width: 356px;
+            margin: auto;
+        }
+    }
+
+    .cm-home-section {
+        padding: 0.5rem 0px;
+
+        .MuiTypography-root {
+            &.cm-user-name-wrapper {
+                font-size: 1.5rem;
+            }
+
+            &.cm-user-role-wrapper {
+                font-size: 3rem;
+                display: flex;
+                align-items: center;
+                gap: 14px;
+
+                .cm-user-role {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    .cm-section-title {
+        font-size: 2rem !important;
+    }
+
+    .cm-awsome-section {
+        .serviceGrid {
+            >.MuiGrid-item {
+                .serviceCard {
+                    border-radius: 100px 100px 24px 24px !important;
+
+                    .MuiCardContent-root {
+                        border-radius: 100px 100px 24px 24px !important;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .cm-skills-section {
+        .cm-skills-universe-main {
+            .cm-universe-vertical-line-main {
+                .cm-universe-vertical-line {
+                    &.cm-secound-vertical-line {
+                        top: -138%;
+                        left: 66px;
+                        rotate: -11deg;
+                    }
+
+                    &.cm-third-vertical-line {
+                        top: -118%;
+                        left: 269px;
+                    }
+
+                    &.cm-four-vertical-line {
+                        top: -139%;
+                        right: 82px;
+                        rotate: 14deg;
+                    }
+                }
+            }
+        }
+
+        .cm-skills-universe-main {
+            margin: 0rem auto 0rem auto;
+        }
+    }
+
+    /* Contact section start */
+    .cm-contect-section-wrapper {
+        .cm-contact-section {
+            justify-content: center;
+
+            .cm-contact-logo {
+                padding: 0 0 50px 0px;
+
+                &::before {
+                    border-radius: 24px 24px 0px 0px;
+                    background-color: var(--purple-700);
+                }
+
+                img {
+                    width: 8 0%;
+                }
+            }
+
+            .MuiGrid-root {
+                &:last-child {
+                    border-radius: 32px 30px 24px 24px;
+                    margin-top: -50px;
+                    z-index: 1;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 10px var(--bg-white);
+                }
+            }
+        }
+    }
+
+    /* Contact section end  */
+}
+
+@media(min-width: 600px) and (max-width: 690px) {
+    .cm-awsome-section {
+        .MuiPaper-root {
+            height: 360px;
+        }
+    }
+}
+
+/* Extra Small Devices (Phones, 480px - 600px) */
+@media (max-width: 660px) {
+    .cm-main-header {
+        .MuiContainer-root {
+            .cm-header-logo {
+                max-width: 128px;
+            }
+
+            .MuiIconButton-root {
+                padding: 0px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+    }
+
+    .cm-awsome-section {
+        .serviceGrid {
+            >.MuiGrid-item {
+                .serviceCard {
+                    border-radius: 24px !important;
+
+                    .MuiCardContent-root {
+                        border-radius: 24px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .cm-skills-section {
+        padding: 1rem 0px;
+
+        .cm-skills-universe-main {
+            width: auto;
+            background: radial-gradient(20% 45% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+            margin-top: -0.6rem;
+            height: 220px;
+
+            .cm-universe-vertical-line {
+                display: none !important;
+            }
+
+            .cm-skkills-universe-inner {
+                width: 94px;
+
+                &::before {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+
+        .cm-skills-wrapper {
+            .MuiCard-root {
+                width: 54px;
+                height: 54px;
+
+                .text-5xl {
+                    font-size: 2.4rem !important;
+                }
+            }
+        }
+    }
+
+    .cm-universe-line {
+        display: none;
+    }
+
+    .cm-home-shadow {
+        &.cm-home-shadow {
+            height: 340px;
+            width: 340px;
+            margin: auto;
+
+            img {
+                width: 30%;
+            }
+
+            &::before {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+
+    .cm-experience-section {
+        padding: 0rem 0px 2rem 0;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .cm-about-section {
+        padding-bottom: 0rem;
+    }
+
+    .cm-right-side-drawer {
+        .MuiPaper-root {
+            width: 100%;
+        }
+
+        .active {
+            .MuiTypography-root {
+                color: var(--purple-500) !important;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .cm-home-section {
+        .MuiTypography-root {
+            &.cm-user-role-wrapper {
+                font-size: 2.4rem;
+                align-items: center;
+                gap: 10px;
+                line-height: normal;
+                flex-wrap: wrap;
+
+                .cm-user-role {
+                    font-size: 2.4rem;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .cm-skills-section {
+        .cm-skills-universe-main {
+            height: 174px;
+        }
+    }
+
+    .cm-experience-section {
+        .cm-experirece-box {
+            .MuiBox-root {
+                img {
+                    display: none;
+                }
+            }
+
+            .MuiButton-root {
+                margin-top: 1.2rem;
+            }
+
+            .cm-experirece-content {
+                -webkit-line-clamp: 3;
+
+
+
+                .MuiTypography-h6 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .cm-experience-section {
+        &::before {
+            display: none;
+        }
+    }
+}
+@media (max-width: 375px) {
+    .cm-home-shadow{
+        &.cm-home-shadow {
+            height: 280px;
+            width: 280px;
+            margin: auto;
+        }
+    }   
+    .cm-home-section {
+        
+        .MuiTypography-root {
+            &.cm-user-name-wrapper {
+                font-size: 1.4rem;
+                &.cm-user-name{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+}
+}
+/* Reshponshiv css end */

@@ -24,6 +24,7 @@ import AboutComponent from "./About";
 import "@mui/material/styles";
 import "./tailwind.css/tailwind.css";
 import "./App.scss";
+import "./app-responsive.scss";
 import { Divider } from "@mui/material";
 import ExperienceDetails from "./ExperienceDetails";
 import CompanyexperienceDetails from "./Experience-details-company";

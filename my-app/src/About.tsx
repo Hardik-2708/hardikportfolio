@@ -23,6 +23,7 @@ import fiveline from "./image/logo/five.svg";
 import sixline from "./image/logo/six.svg";
 import intership from "./image/logo/internship.png";
 import Company from "./image/logo/company.png";
+import { spacing } from '@mui/system';
 
 const AboutComponent = () => {
   const [value, setValue] = useState('1');
@@ -156,7 +157,7 @@ const AboutComponent = () => {
       </Box>
       <Box className="cm-experience-section">
         <Container>
-          <Grid container spacing={4} justifyContent="center" alignItems="center">
+          <Grid container columnSpacing={{ xs: 0, md: 4 }} rowSpacing={{ xs: 4, md: 0 }} justifyContent="center" alignItems="center">
             <Grid item xs={12} md={12}>
               <Typography component="h4" variant='body1' className='cm-section-title'>Work Experience</Typography>
             </Grid>
@@ -176,7 +177,7 @@ const AboutComponent = () => {
                       UI/UX Designer Internship
                     </Typography>
                     <Typography variant="h6" sx={{ fontWeight: "500",color: "var(--purple-300)", margin: "10px 0",
-                      fontSize: " 1rem",                      
+                      fontSize: " 1.25rem",                      
                       fontFamily: 'Plus Jakarta Sans' }}>
                      Trained under [Ketan bamniya] (Designer)
                     </Typography>
@@ -212,7 +213,7 @@ const AboutComponent = () => {
                       UI/UX Designer 
                     </Typography>
                     <Typography variant="h6" sx={{ fontWeight: "500",color: "var(--purple-300)", margin: "10px 0",
-                      fontSize: " 1rem",                      
+                      fontSize: " 1.25rem",                      
                       fontFamily: 'Plus Jakarta Sans' }}>
                       Triveni global software services
                     </Typography>

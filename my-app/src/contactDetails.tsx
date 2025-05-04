@@ -3,6 +3,7 @@ import { Box, Typography, Button, Stack, Container, Grid } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+
 import ContectImg from "./image/contact-img.svg";
 const ContactSection: React.FC = () => {
     return (
@@ -15,7 +16,7 @@ const ContactSection: React.FC = () => {
                 </Grid>
                 <Grid xs={12} sm={8} md={6} lg={6} xl={6} sx={{backgroundColor:'var(--purple-900)' }}>
                     <Box className="" textAlign="center">
-                        <Typography variant="h4" mb={4} fontWeight={500}>
+                        <Typography variant="h4" mb={4} fontWeight={500} sx={{fontSize: '2rem'}}>
                             What’s Next?
                         </Typography>
                         <Typography variant="h5" mb={4}>
@@ -26,6 +27,7 @@ const ContactSection: React.FC = () => {
 
                             <Button className="cm-social-btn" startIcon={<Typography className="sing"><WhatsAppIcon className="socialSvg whatsappSvg" /></Typography>} href="https://wa.me/7096001406">  Let’s Chat on WhatsApp
                             </Button>
+                          
                             <Stack direction="row" spacing={1} alignItems="center">
                                 <EmailIcon />
                                 <Typography variant="body2">Hardik.baraiya27@gmail.com</Typography>

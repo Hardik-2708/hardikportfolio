@@ -1,15 +1,10 @@
-import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import { Button, Chip, List, ListItem, Tooltip } from '@mui/material';
-import { Card, CardContent } from "@mui/material";
+import { Button, Chip, Tooltip } from '@mui/material';
+import { Card } from "@mui/material";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3, DiSass, DiBootstrap, DiJavascript1, DiGit } from "react-icons/di";
 import { SiTypescript, SiAngular, SiMui, SiFigma, SiAdobexd, SiTailwindcss, SiAdobeillustrator } from "react-icons/si";
@@ -20,17 +15,17 @@ import secoundline from "./image/logo/secound-line.svg";
 import thirdline from "./image/logo/third-line.svg";
 import fourline from "./image/logo/four.svg";
 import fiveline from "./image/logo/five.svg";
-import sixline from "./image/logo/six.svg";
 import intership from "./image/logo/internship.png";
 import Company from "./image/logo/company.png";
-import { spacing } from '@mui/system';
 
 const AboutComponent = () => {
-  const [value, setValue] = useState('1');
+  const startDate: Date = new Date(2022, 0, 1); // Jan 1, 2022
+  const now: Date = new Date();
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue);
-  };
+  const diffInMs: number = now.getTime() - startDate.getTime();
+  const diffInYears: number = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
+  const formattedYears: string = diffInYears.toFixed(1); // e.g., 3.4
+
   const skills = [
     { name: "HTML", icon: <AiFillHtml5 className="text-red-500 text-5xl" /> },
     { name: "CSS", icon: <DiCss3 className="text-blue-500 text-5xl" /> },
@@ -62,7 +57,7 @@ const AboutComponent = () => {
                 <Typography component="span" className="cm-home-typography"> Triveni Global Software Services.</Typography>
               </Typography>
               <Typography component="div" variant="body1">
-                Hi, I’m <Typography component="span" className="cm-home-typography">Hardik</Typography>, a self-taught and dedicated UI/UX Designer with <Typography component="span" className="cm-home-typography">3.4+ years</Typography> of experience in crafting seamless digital experiences. With a strong foundation in user-centered design principles, I specialize in creating interfaces that are not only visually engaging but also intuitive and accessible to a diverse audience.
+                Hi, I’m <Typography component="span" className="cm-home-typography">Hardik</Typography>, a self-taught and dedicated UI/UX Designer with <Typography component="span" className="cm-home-typography">{formattedYears}+ years</Typography> of experience in crafting seamless digital experiences. With a strong foundation in user-centered design principles, I specialize in creating interfaces that are not only visually engaging but also intuitive and accessible to a diverse audience.
               </Typography>
               <Typography component="div" variant="body1">
                 Currently working as a UI / UX Designer at <Typography component="span" className="cm-home-typography">Triveni Global Software Services</Typography>, I focus on designing user-friendly, aesthetically appealing, and high-performing interfaces.

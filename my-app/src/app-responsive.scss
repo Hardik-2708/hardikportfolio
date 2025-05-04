@@ -540,6 +540,12 @@
     .cm-experience-section {
         padding: 0rem 0px 2rem 0;
     }
+    .cm-skills-section{
+        .cm-experiance-title{
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
 }
  
 @media (max-width: 480px) {
@@ -612,6 +618,7 @@
             display: none;
         }
     }
+   
 }
 @media (max-width: 375px) {
     .cm-home-shadow{
@@ -660,6 +667,7 @@
                 position: absolute;
                 top: 0;
                 bottom: unset;
+                border-radius: 20px 20px 0px 20px;
             }
         }
     }  

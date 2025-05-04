@@ -26,40 +26,7 @@ const FeatureData: Project[] = [
     title: 'Freshcart',
     description: 'Clean and Minimalistic Homepage Design for your online stores. Simplified layouts with ample white space for a clean and modern look. Minimalist navigation menus and straightforward user interfaces',
     image: freshcard,
-  },
-
-  {
-    title: 'Freshcart',
-    description: 'Clean and Minimalistic Homepage Design for your online stores. Simplified layouts with ample white space for a clean and modern look. Minimalist navigation menus and straightforward user interfaces',
-    image: freshcard,
-  },
-
-  {
-    title: 'Freshcart',
-    description: 'Clean and Minimalistic Homepage Design for your online stores. Simplified layouts with ample white space for a clean and modern look. Minimalist navigation menus and straightforward user interfaces',
-    image: freshcard,
-  },
-
-  {
-    title: 'Freshcart',
-    description: 'Clean and Minimalistic Homepage Design for your online stores. Simplified layouts with ample white space for a clean and modern look. Minimalist navigation menus and straightforward user interfaces',
-    image: freshcard,
-  },
-
-  {
-    title: 'Freshcart',
-    description: 'Clean and Minimalistic Homepage Design for your online stores. Simplified layouts with ample white space for a clean and modern look. Minimalist navigation menus and straightforward user interfaces',
-    image: freshcard,
-  },
-
- 
-  // {
-  //   title: 'Secure Dashboard',
-  //   description: 'Clean and Minimalistic Homepage Design for your online stores. Simplified layouts with ample white space for a clean and modern look. Minimalist navigation menus and straightforward user interfaces',
-  //   image: featuredDash,
-  // },
-
-   
+  }
 ];
 
 

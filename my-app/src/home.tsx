@@ -27,7 +27,7 @@ const Home = () => {
       <Container>
         <Grid container spacing={{ xs: 2, sm: 2, md: 4, lg: 6 }} justifyContent="center" alignItems="center">
 
-          {/* Image with slide in + scale hover */}
+          
           <Grid item xs={12} md={5} lg={5} sx={{ position: 'relative' }}>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -39,7 +39,7 @@ const Home = () => {
               <img src="User-image.png" alt="hero" />
             </motion.div>
 
-            {/* Arrow with fade + bounce + rotate */}
+            
             <motion.div
               initial={{ opacity: 0, y: 20, rotate: -15 }}
               animate={{ opacity: 1, y: 0, rotate: 0 }}

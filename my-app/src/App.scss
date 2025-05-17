@@ -161,7 +161,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--purple-500);
+  background: var(--purple-400);
   border-radius: 8px;
 }
 
@@ -224,7 +224,7 @@ body {
         transform: translate(-50%, -50%);
         height: 30px;
         width: 30px;
-        background-color: var(--purple-500);
+        background-color: var(--purple-400);
         border-radius: 50%;
         transition: .6s ease;
 
@@ -429,7 +429,7 @@ body {
 
     .active {
       .MuiButtonBase-root {
-        color: var(--purple-500);
+        color: var(--purple-400);
         font-weight: 600;
       }
     }
@@ -548,7 +548,7 @@ body {
       font-size: 1.8rem;
 
       .cm-user-name {
-        color: var(--purple-500);
+        color: var(--purple-400);
         font-size: 1.8rem;
         font-family: "Preahvihear", serif;
       }
@@ -559,7 +559,7 @@ body {
 
       .cm-user-role {
         font-size: 5rem;
-        color: var(--purple-500);
+        color: var(--purple-400);
       }
     }
 
@@ -592,7 +592,7 @@ body {
   .cm-home-typography {
     font-weight: 600;
     font-family: "Preahvihear", serif !important;
-    color: var(--purple-500);
+    color: var(--purple-400);
     font-weight: 600;
   }
 
@@ -1086,6 +1086,26 @@ footer {
 }
 
 /* Footer section css end */
+.scroll-to-top-btn {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: var() !important;  
+  color: white !important;
+  box-shadow: 0 4px 8px rgba(25, 118, 210, 0.3);
+  transition: background-color 0.3s ease;
+  z-index: 9999 !important;
+  border-radius: 50%; 
+  background-color: var(--purple-700) !important;
+  color: var(--bg-white) !important;
+  &:hover {
+    background-color:var(--purple-400) !important;
+    box-shadow:  var(--bg-black);
+  }
+  svg {
+    font-size: 2.4rem !important; 
+  }
+}
 @keyframes float {
 
   0%,

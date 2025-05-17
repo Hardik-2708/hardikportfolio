@@ -29,6 +29,7 @@ import { Divider } from "@mui/material";
 import ExperienceDetails from "./ExperienceDetails";
 import CompanyexperienceDetails from "./Experience-details-company";
 import ScrollToTop from "./ScrollToTop"; 
+import ScrollToTopButton from "./ScrollToTopButton";
 import Footer from "./Footer";  
 import ServicesComponent from './Services';
 import FeaturedComponent from './Featured';
@@ -230,7 +231,8 @@ const App = () => (
     <Routes>
       <Route path="/Experience-details-company" element={<CompanyexperienceDetails />} />
     </Routes>
-    <Footer />  
+    <Footer /> 
+    <ScrollToTopButton /> 
   </Box>
 </Router>
 );

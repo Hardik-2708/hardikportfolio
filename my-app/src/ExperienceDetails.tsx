@@ -26,7 +26,7 @@ function ExperienceDetails() {
                 }} onClick={() => navigate("/home")} startIcon={<ArrowBackIcon />}>
                     Go Back
                 </Button>
-                <Typography variant="h4" fontWeight="bold" sx={{ color: "var(--purple-500)", fontFamily: "Preahvihear , serif !important"}}>
+                <Typography variant="h4" fontWeight="500" sx={{ color: "var(--purple-500)", fontFamily: "Preahvihear , serif !important"}}>
                     UI/UX Designer Internship
                 </Typography>
             </div>

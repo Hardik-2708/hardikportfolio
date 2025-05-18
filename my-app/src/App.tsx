@@ -196,7 +196,7 @@ const Navigation = () => {
             ))}
            <Divider sx={{ display: { xl: "none", md: "block" } }} orientation="horizontal" flexItem variant="middle" />
             <div className="switch-theme">
-              <Typography component="p">Switch Theme</Typography> 
+              <Typography component="p" fontWeight={500}>Switch Theme</Typography> 
               <IconButton onClick={handleToggle} color="inherit" >
                 {isDarkMode ? (
                   <DarkModeOutlinedIcon sx={{ color: "var(--blue-50)" }} />
